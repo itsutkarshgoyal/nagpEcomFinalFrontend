@@ -29,15 +29,15 @@ import { AuthInterceptor, AuthModule, LogLevel } from 'angular-auth-oidc-client'
     AuthModule.forRoot({
       config: {
         authority: 'https://server20240314095455.azurewebsites.net',
-        redirectUrl: 'https://main--luminous-faun-9bf30c.netlify.app/signin-oidc',
-        postLogoutRedirectUri: 'https://main--luminous-faun-9bf30c.netlify.app/',
+        redirectUrl: 'https://luminous-faun-9bf30c.netlify.app/signin-oidc',
+        postLogoutRedirectUri: 'https://luminous-faun-9bf30c.netlify.app',
         clientId: 'roles_client',
         scope: 'EComAPI.read openid profile',
         responseType: 'code',
         silentRenew: true,
         useRefreshToken: true,
         logLevel: LogLevel.Debug,
-        secureRoutes: ['https://main--luminous-faun-9bf30c.netlify.app',  'https://localhost:5001/api/' ],
+        secureRoutes: ['https://luminous-faun-9bf30c.netlify.app',  'https://localhost:5001/api/' ],
       },
     }),
   ],
